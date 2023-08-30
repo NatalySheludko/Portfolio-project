@@ -15,7 +15,6 @@ body {
 .hero {
   background: var(--main-color);
   text-align: center;
-
   padding: 160px 20px;
 }
 
@@ -28,10 +27,13 @@ body {
 
 p {
   font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .hero h1 {
   font-size: 96px;
+  line-height: 1.5;
 }
 
 h1,
@@ -51,7 +53,7 @@ h6 {
   font-weight: normal;
   font-size: 24px;
   color: var(--text-color);
-  line-height: 2;
+  line-height: 1.5;
 }
 
 div a {
@@ -62,8 +64,47 @@ div a {
   font-weight: 500;
   padding: 15px 30px;
   text-decoration: none;
+  line-height: 27px;
 }
 
 div a:hover {
   color: #212529;
+}
+
+/**/
+h2 {
+  font-size: 64px;
+}
+
+.button {
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 15px 30px;
+  background-color: var(--text-btn-color);
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  line-height: 27px;
+}
+.project-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
