@@ -26,40 +26,97 @@
   </head>
 
   <body>
-    <div class="content-container container text-center">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <img
+          src="images/logo.png"
+          class="d-none d-md-block"
+          alt="Logo"
+          width="160"
+        />
+        <img
+          src="images/logo-small.png"
+          class="d-sm-block d-md-none me-5"
+          alt="Logo"
+          width="75"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-disabled="true"
+                href="/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content-container text-center">
       <div class="content">
         <h1 class="mb-5">Let's get in touch!</h1>
-        <div class="row">
-          <div class="col-4">
-            <h3 class="mb-5">
-              <span><i class="fa-solid fa-envelope"></i><br /></span>Email
+
+        <div class="d-md-flex justify-content-md-evenly">
+          <div>
+            <h3 class="mb-3">
+              <i class="fa-brands fa-square-instagram mt-5"></i><br />
+              Instagram
             </h3>
-            <p><a href="mailto:patricia@gmail.com">patricia@gmail.com</a></p>
+            <a
+              href="https://www.instagram.com/patricia.codes"
+              class="mb-5"
+              target="_blank"
+              >@patricia.codes</a
+            >
           </div>
-          <div class="col-4">
-            <h3 class="mb-5">
-              <span><i class="fa-brands fa-twitter"></i><br /></span>Twitter
+          <div>
+            <h3 class="mb-3">
+              <i class="fa-brands fa-twitter mt-5"></i><br />Twitter
             </h3>
-            <p>
-              <a href="https://www.twitter.com/patricia" target="_blank"
-                >@patricia</a
-              >
-            </p>
+            <a
+              href="https://www.twitter.com/patricia"
+              class="mb-5"
+              target="_blank"
+              >@patricia</a
+            >
           </div>
-          <div class="col-4">
-            <h3 class="mb-5">
-              <span><i class="fa-brands fa-square-instagram"></i><br /></span
-              >Instagram
+          <div>
+            <h3 class="mb-3">
+              <i class="fa-solid fa-envelope mt-5"></i><br />Email
             </h3>
-            <p>
-              <a href="https://www.instagram.com/patricia.codes" target="_blank"
-                >@patricia.codes</a
-              >
-            </p>
+            <a href="mailto:patricia@gmail.com" class="mb-5"
+              >patricia@gmail.com</a
+            >
           </div>
         </div>
       </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

@@ -16,7 +16,7 @@ body {
 .hero {
   background: var(--main-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 100px 20px;
 }
 
 .hero p {
@@ -62,7 +62,7 @@ h6 {
   line-height: 1.5;
 }
 
-div a {
+.content a {
   background-color: var(--branding-color);
   color: var(--text-btn-color);
   border-radius: 4px;
@@ -71,6 +71,10 @@ div a {
   padding: 15px 30px;
   text-decoration: none;
   line-height: 27px;
+}
+
+.project-description a {
+  text-decoration: none;
 }
 
 div a:hover {
@@ -117,11 +121,16 @@ h2 {
   .content-container {
     text-align: center;
   }
+
+  /*.contact-container {
+    display: flex;
+    
+  }*/
 }
 
 /*About */
 .content-container {
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
 
 .content-container h1 {
@@ -160,4 +169,30 @@ h2 {
 .content p {
   font-size: 14px;
   font-weight: 400;
+}
+
+/*nav*/
+
+nav {
+  font-family: var(--font-family-poppins);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--paragraph-color);
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+nav .active {
+  color: var(--branding-color) !important;
+}
+
+nav a:hover {
+  color: var(--branding-color) !important;
+  transition: all 200ms;
 }
