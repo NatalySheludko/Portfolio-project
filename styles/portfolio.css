@@ -9,6 +9,7 @@
   --text-btn-color: white;
 }
 
+/*home*/
 body {
   font-family: var(--font-family-poppins);
 }
@@ -81,7 +82,7 @@ div a:hover {
   color: #212529;
 }
 
-/**/
+/*home part2*/
 h2 {
   font-size: 64px;
 }
@@ -97,35 +98,6 @@ h2 {
 }
 .project-description {
   padding: 120px 60px;
-}
-
-@media (max-width: 900px) {
-  .hero h1 {
-    font-size: 44px;
-    line-height: 56px;
-  }
-
-  h2 {
-    font-size: 44px;
-  }
-
-  .hero {
-    padding: 80px 20px;
-  }
-
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
-
-  .content-container {
-    text-align: center;
-  }
-
-  /*.contact-container {
-    display: flex;
-    
-  }*/
 }
 
 /*About */
@@ -159,7 +131,6 @@ h2 {
 }
 
 /*work*/
-
 .content h3 {
   font-family: var(--font-family-poppins);
   font-weight: 700;
@@ -172,7 +143,6 @@ h2 {
 }
 
 /*nav*/
-
 nav {
   font-family: var(--font-family-poppins);
   font-size: 16px;
@@ -194,5 +164,88 @@ nav .active {
 
 nav a:hover {
   color: var(--branding-color) !important;
-  transition: all 200ms;
+  transition: all 200ms ease-in-out;
+}
+
+/*footer*/
+footer .email-link a {
+  color: black;
+  text-decoration: none;
+  font-family: var(--font-family-poppins);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+footer .social-media-links i {
+  color: var(--branding-color);
+  background-color: rgba(108, 99, 255, 0.05);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 50px 0;
+}
+
+footer .social-media-links i:hover {
+  background-color: var(--branding-color);
+  color: var(--text-btn-color);
+  transition: 100ms all ease-in-out;
+}
+
+footer h4 {
+  color: #000;
+  font-family: var(--font-family-playfair);
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+footer .contact-box {
+  border-radius: 20px;
+  background: #f9f7fe;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+footer .around-box {
+  padding: 30px 120px;
+}
+
+footer .content {
+  margin-top: 60px;
+}
+
+/*@media*/
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+
+  .content-container {
+    text-align: center;
+  }
+
+  footer .email-link {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  footer h4 {
+    font-size: 30px;
+  }
 }
