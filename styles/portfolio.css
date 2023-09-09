@@ -46,10 +46,7 @@ p {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   color: black;
   font-family: var(--font-family-playfair);
   font-weight: bold;
@@ -102,7 +99,7 @@ h2 {
 
 /*About */
 .content-container {
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 .content-container h1 {
@@ -176,6 +173,10 @@ footer .email-link a {
   font-weight: 500;
 }
 
+footer .email-link a:hover {
+  color: var(--branding-color);
+}
+
 footer .social-media-links i {
   color: var(--branding-color);
   background-color: rgba(108, 99, 255, 0.05);
@@ -192,7 +193,7 @@ footer .social-media-links i:hover {
   transition: 100ms all ease-in-out;
 }
 
-footer h4 {
+footer h3 {
   color: #000;
   font-family: var(--font-family-playfair);
   font-size: 48px;
@@ -213,6 +214,19 @@ footer .around-box {
 
 footer .content {
   margin-top: 60px;
+}
+
+.source p {
+  text-align: center;
+  color: #000;
+}
+
+.source a {
+  text-decoration: none;
+}
+
+.source a:hover {
+  color: #757cca;
 }
 
 /*@media*/
@@ -245,7 +259,7 @@ footer .content {
 }
 
 @media (max-width: 1000px) {
-  footer h4 {
+  footer h3 {
     font-size: 30px;
   }
 }
